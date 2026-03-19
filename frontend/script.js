@@ -1,9 +1,9 @@
 // ── Config ────────────────────────────────────────────────
-// LOCAL development: keep as http://localhost:8000
+// LOCAL development: keep as https://web-production-6932b.up.railway.app
 // After deploying backend to Railway/Render, replace with your deployed URL:
 // e.g. const API_BASE = "https://ai-recipe-maker-api.up.railway.app";
 //      const API_BASE = "https://ai-recipe-maker-api.onrender.com";
-const API_BASE = "http://localhost:8000";
+const API_BASE = "https://web-production-6932b.up.railway.app";
 
 // ── Loading messages for fun UX ───────────────────────────
 const LOADING_MESSAGES = [
