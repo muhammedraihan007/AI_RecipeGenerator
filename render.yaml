@@ -1,0 +1,14 @@
+# Render deployment configuration
+# Deploy at: https://render.com
+# Connect your GitHub repo and Render will auto-detect this file.
+
+services:
+  - type: web
+    name: ai-recipe-maker-api
+    runtime: python
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false   # You'll set this manually in Render dashboard
+    autoDeploy: true
